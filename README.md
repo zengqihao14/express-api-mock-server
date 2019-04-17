@@ -45,7 +45,8 @@ app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
   API_BASE_PATH: '/api/',
   STATIC_BASE_PATH:'/static',
   HEADER: {
-    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, Authorization',
+    'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, UPDATE, OPTIONS',
     'Access-Control-Allow-Credentials': true,
     'Cache-Control': 'private, no-cache, no-store, must-revalidate',
     'Expires': -1,
@@ -59,7 +60,8 @@ app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
   COOKIE_OPTIONS: {
     maxAge: 1000 * 60 * 60 * 24, // 24h
     httpOnly: true,
-    signed: false
+    signed: false,
+    path: '/'
   },
   LOGGER_FORMAT: 'customFormat'
 }
