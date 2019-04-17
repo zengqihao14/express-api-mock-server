@@ -1,0 +1,9 @@
+{
+  "user": {
+    "id": 12,
+    "name": "John",
+    "gender": "male",
+    "age": 34,
+    "tel": 12345678901
+  }
+}
