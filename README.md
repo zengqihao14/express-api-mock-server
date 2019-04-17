@@ -61,15 +61,16 @@ app.get(URI('users'), (req, res) => res.send(require('../data/user/getUsers')));
 
 ## Construct
 ```
-- middleware
-- src
- |___ data
- |___ routes 
- |___ static
-- config.js
-- package.json
-- README.md
-- server.js
-- yarn.lock
+.
+├── middleware
+├── src
+│    ├── data
+│    ├── routes
+│    └── static
+├── config.js
+├── package.json
+├── README.md
+├── server.js
+└── yarn.lock
 ```
 
