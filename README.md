@@ -50,6 +50,11 @@ app.get(URI('users'), (req, res) => res.send(require('../data/user/getUsers')));
     'Pragma': 'no-cache'
   },
   RESPONSE_LATENCY: 1000,
+  COOKIE_OPTIONS: {
+    maxAge: 1000 * 60 * 60 * 24, // 24h
+    httpOnly: true,
+    signed: false
+  },
   LOGGER_FORMAT: 'customFormat'
 }
 ``` 

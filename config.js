@@ -10,5 +10,10 @@ module.exports = {
     'Pragma': 'no-cache'
   },
   RESPONSE_LATENCY: 1000,
+  COOKIE_OPTIONS: {
+    maxAge: 1000 * 60 * 60 * 24, // 24h
+    httpOnly: true,
+    signed: false
+  },
   LOGGER_FORMAT: 'customFormat'
 };
