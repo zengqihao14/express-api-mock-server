@@ -1,12 +1,12 @@
 {
   "name": "ExpressAPIMockServer",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Mock API Server based on Express",
   "main": "server.js",
   "author": "Zen",
   "license": "ISC",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon server.js"
+    "start": "./node_modules/.bin/nodemon server.js --config ./nodemon.json"
   },
   "dependencies": {},
   "devDependencies": {
