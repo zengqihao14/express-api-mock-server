@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "ignore": [".gitignore", "*.lock", "*.log", "package.json", "nodemon.json", "README.md", "node_modules/*"],
+  "execMap": {}
+}
