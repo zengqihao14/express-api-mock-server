@@ -1,11 +1,13 @@
 const path = require('path');
 const express = require('express');
+const cors = require('cors');
 const logger = require('./middleware/logger');
 const CONFIG = require('./config');
 
 const app = express();
 
 const launch = () => {
+  app.use(cors());
   app.use(function (req, res, next) {
     for (key in CONFIG.HEADER) {
       res.header(key, CONFIG.HEADER[key]);
