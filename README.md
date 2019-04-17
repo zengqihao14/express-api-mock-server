@@ -45,9 +45,15 @@ app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
   API_BASE_PATH: '/api/',
   STATIC_BASE_PATH:'/static',
   HEADER: {
+    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+    'Access-Control-Allow-Credentials': true,
     'Cache-Control': 'private, no-cache, no-store, must-revalidate',
-    'Expires': '-1',
+    'Expires': -1,
     'Pragma': 'no-cache'
+  },
+  CORS_OPTIONS: {
+    origin: true,
+    credentials: true
   },
   RESPONSE_LATENCY: 1000,
   COOKIE_OPTIONS: {

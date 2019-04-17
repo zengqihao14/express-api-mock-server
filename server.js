@@ -8,7 +8,7 @@ const CONFIG = require('./config');
 const app = express();
 
 const launch = () => {
-  app.use(cors());
+  app.use(cors(CONFIG.CORS_OPTIONS));
   app.use(cookieParser());
   app.use(function (req, res, next) {
     for (key in CONFIG.HEADER) {
