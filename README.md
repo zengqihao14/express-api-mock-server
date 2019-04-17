@@ -68,6 +68,7 @@ app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
 │    ├── routes
 │    └── static
 ├── config.js
+├── nodemon.json
 ├── package.json
 ├── README.md
 ├── server.js
