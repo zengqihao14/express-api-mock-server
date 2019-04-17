@@ -22,7 +22,7 @@ $ yarn start
 ``` json
 {
   "id": 12,
-  "name": "john",
+  "name": "John",
   "gender": "male",
   "age": 34,
   "tel": 12345678901
@@ -32,7 +32,7 @@ $ yarn start
 #### Route
 Add rule in `./src/routes/index.js` like:
 ``` js
-app.get(URI('users'), (req, res) => res.send(require('../data/user/getUsers')));
+app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
 ```
 
 ### Configuration
