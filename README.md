@@ -70,13 +70,13 @@ app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
 ## Construct
 ```
 .
-├── middleware
 ├── src
 │    ├── data
+│    ├── middleware
 │    ├── model
 │    ├── routes
-│    └── static
-├── utils
+│    ├── static
+│    └── utils
 ├── config.js
 ├── nodemon.json
 ├── package.json

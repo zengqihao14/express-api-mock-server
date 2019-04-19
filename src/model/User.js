@@ -1,4 +1,4 @@
-const Utils = require('../../utils/utils');
+const Utils = require('../utils/utils');
 
 const MOCK_FIRST_NAME = ['Brittney', 'Gran', 'Arlana', 'Lara', 'Rudy', 'Skipp', 'Margit', 'Veradis', 'Adriena', 'Harcourt'];
 const MOCK_LAST_NAME = ['Fould', 'Reade', 'Kiddell', 'Deverill', 'Bratchell'];
