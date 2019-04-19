@@ -19,9 +19,9 @@ function User() {
       jobTitle: options && options.jobTitle || Utils.getRandomFromArray(MOCK_JOB_TITLE)
     };
   };
-  this.createUsers = (options) => {
+  this.createUsers = (num, options) => {
     const users = [];
-    for (i of Array(10)) {
+    for (i of Array(num)) {
       const user = this.createUser(options);
       if (user) {
         users.push(user);
@@ -30,7 +30,7 @@ function User() {
     return users;
   };
 
-  this.getUsers = (options) => this.createUsers(options);
+  this.getUsers = (options) => this.createUsers(10, options);
   this.newUser = (options) => this.createUser(Object.assign({}, options, {id: null}));
   this.getUser = (id) => this.createUser({id});
   this.updateUser = (id, options) => this.createUser(Object.assign({}, options, {id}));
