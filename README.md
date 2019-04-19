@@ -37,7 +37,7 @@ app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
 
 ### Configuration
 `./config.js`
-```
+``` js
 {
   STATIC_SOURCE_PATH:'src/static',
   ROUTE_PATH: 'src/routes',
