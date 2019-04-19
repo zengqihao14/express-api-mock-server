@@ -19,7 +19,7 @@ logger.token('customFormat', function developmentFormatLine (tokens, req, res) {
 
   if (!fn) {
     // compile
-    fn = developmentFormatLine[color] = logger.compile(':date[iso] [:remote-addr\::remote-user] \x1b[0m:method \x1b[37m:url \x1b[' +
+    fn = developmentFormatLine[color] = logger.compile(':date[iso] [:remote-addr\::remote-user] \x1b[0m:method \x1b[34m:url \x1b[' +
       color + 'm:status\x1b[0m - :response-time ms')
   }
 
