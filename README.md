@@ -73,8 +73,10 @@ app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
 ├── middleware
 ├── src
 │    ├── data
+│    ├── model
 │    ├── routes
 │    └── static
+├── utils
 ├── config.js
 ├── nodemon.json
 ├── package.json
