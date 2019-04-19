@@ -5,7 +5,7 @@ const URI = (path) => (CONFIG.API_BASE_PATH + path);
 function Route(app) {
 
   // Example
-  app.get(URI('login'), (req, res) => {
+  app.post(URI('login'), (req, res) => {
     res.cookie('AuthToken', 'bad18eba1ff45jk7858b8ae88a77fa30', CONFIG.COOKIE_OPTIONS);
     res.cookie('uid', 12, CONFIG.COOKIE_OPTIONS);
     res.send(require('../data/auth/login'));
