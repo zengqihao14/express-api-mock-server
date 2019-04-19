@@ -35,6 +35,11 @@ Add rule in `./src/routes/index.js` like:
 app.get('/users', (req, res) => res.send(require('../data/user/getUsers')));
 ```
 
+#### API
+```
+GET http://localhost:3100/api/users
+```
+
 ### Configuration
 `./config.js`
 ``` js
