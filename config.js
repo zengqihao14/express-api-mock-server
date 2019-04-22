@@ -19,7 +19,7 @@ module.exports = {
   RESPONSE_LATENCY: 1000,
   COOKIE_OPTIONS: {
     maxAge: 1000 * 60 * 60 * 24, // 24h
-    httpOnly: true,
+    httpOnly: false,
     signed: false,
     path: '/'
   },
